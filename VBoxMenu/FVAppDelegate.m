@@ -25,8 +25,8 @@
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     
     NSSize itemSize;
-    itemSize.width = [[NSStatusBar systemStatusBar] thickness];
-    itemSize.height = [[NSStatusBar systemStatusBar] thickness];
+    itemSize.width = [[NSStatusBar systemStatusBar] thickness] - 1;
+    itemSize.height = [[NSStatusBar systemStatusBar] thickness] - 1;
         
     [statusImage setScalesWhenResized:YES];
     [statusImage setSize:itemSize];
@@ -91,11 +91,26 @@
                 
         [_statusMenu addItem:menu];
     }
+    
+    NSMenuItem *menu = [[NSMenuItem alloc] initWithTitle:@"Quit"
+                                                  action:@selector(startVM:) 
+                                           keyEquivalent:@""];
+
+    NSMenuItem *separator = [NSMenuItem separatorItem];
+    
+    [_statusMenu addItem:separator];
+    [_statusMenu addItem:menu];
 }
 
 -(void) startVM: (id)sender
 {
     NSString *vmname = [(NSMenuItem*)sender title];
+    
+    if (vmname == @"Quit")
+    {
+        [NSApp terminate:self];
+    }
+    
     NSString *cmdName = [[NSBundle mainBundle] pathForResource:@"startvm" ofType:@"sh"];
 
     NSString *cmd = [NSString stringWithString:@"/bin/sh"];
