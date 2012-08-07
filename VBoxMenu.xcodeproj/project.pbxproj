@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D17292115D0496000A7C081 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D17292015D0496000A7C081 /* Cocoa.framework */; };
+		1D17292B15D0496000A7C081 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D17292915D0496000A7C081 /* InfoPlist.strings */; };
+		1D17292D15D0496000A7C081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17292C15D0496000A7C081 /* main.m */; };
+		1D17293115D0496000A7C081 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1D17292F15D0496000A7C081 /* Credits.rtf */; };
+		1D17293415D0496000A7C081 /* FVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D17293315D0496000A7C081 /* FVAppDelegate.m */; };
+		1D17293715D0496000A7C081 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D17293515D0496000A7C081 /* MainMenu.xib */; };
+		1D17293F15D05DAF00A7C081 /* virtualbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D17293E15D05DAF00A7C081 /* virtualbox.png */; };
+		1D17294015D05E7700A7C081 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D17292315D0496000A7C081 /* AppKit.framework */; };
+		1D17294715D118C500A7C081 /* listvms.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1D17294215D1181400A7C081 /* listvms.sh */; };
+		1D17294A15D1224200A7C081 /* startvm.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1D17294915D1212D00A7C081 /* startvm.sh */; };
+		1D6F537315D1272B00F8F6CE /* vminfo.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F537115D124F400F8F6CE /* vminfo.sh */; };
+		1DED5DCC15D14F86004589C3 /* os_archlinux_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8415D14F85004589C3 /* os_archlinux_64.png */; };
+		1DED5DCD15D14F86004589C3 /* os_archlinux.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8515D14F85004589C3 /* os_archlinux.png */; };
+		1DED5DCE15D14F86004589C3 /* os_debian_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8615D14F85004589C3 /* os_debian_64.png */; };
+		1DED5DCF15D14F86004589C3 /* os_debian.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8715D14F85004589C3 /* os_debian.png */; };
+		1DED5DD015D14F86004589C3 /* os_dos.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8815D14F85004589C3 /* os_dos.png */; };
+		1DED5DD115D14F86004589C3 /* os_fedora_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8915D14F85004589C3 /* os_fedora_64.png */; };
+		1DED5DD215D14F86004589C3 /* os_fedora.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8A15D14F85004589C3 /* os_fedora.png */; };
+		1DED5DD315D14F86004589C3 /* os_freebsd_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8B15D14F85004589C3 /* os_freebsd_64.png */; };
+		1DED5DD415D14F86004589C3 /* os_freebsd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8C15D14F85004589C3 /* os_freebsd.png */; };
+		1DED5DD515D14F86004589C3 /* os_gentoo_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8D15D14F85004589C3 /* os_gentoo_64.png */; };
+		1DED5DD615D14F86004589C3 /* os_gentoo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8E15D14F85004589C3 /* os_gentoo.png */; };
+		1DED5DD715D14F86004589C3 /* os_jrockitve.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8F15D14F85004589C3 /* os_jrockitve.png */; };
+		1DED5DD815D14F86004589C3 /* os_l4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9015D14F85004589C3 /* os_l4.png */; };
+		1DED5DD915D14F86004589C3 /* os_linux_other.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9115D14F85004589C3 /* os_linux_other.png */; };
+		1DED5DDA15D14F86004589C3 /* os_linux.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9215D14F85004589C3 /* os_linux.png */; };
+		1DED5DDB15D14F86004589C3 /* os_linux22.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9315D14F85004589C3 /* os_linux22.png */; };
+		1DED5DDC15D14F86004589C3 /* os_linux24_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9415D14F85004589C3 /* os_linux24_64.png */; };
+		1DED5DDD15D14F86004589C3 /* os_linux24.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9515D14F85004589C3 /* os_linux24.png */; };
+		1DED5DDE15D14F86004589C3 /* os_linux26_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9615D14F85004589C3 /* os_linux26_64.png */; };
+		1DED5DDF15D14F86004589C3 /* os_linux26.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9715D14F85004589C3 /* os_linux26.png */; };
+		1DED5DE015D14F86004589C3 /* os_macosx_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9815D14F85004589C3 /* os_macosx_64.png */; };
+		1DED5DE115D14F86004589C3 /* os_macosx.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9915D14F85004589C3 /* os_macosx.png */; };
+		1DED5DE215D14F86004589C3 /* os_mandriva_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9A15D14F85004589C3 /* os_mandriva_64.png */; };
+		1DED5DE315D14F86004589C3 /* os_mandriva.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9B15D14F85004589C3 /* os_mandriva.png */; };
+		1DED5DE415D14F86004589C3 /* os_netbsd_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9C15D14F85004589C3 /* os_netbsd_64.png */; };
+		1DED5DE515D14F86004589C3 /* os_netbsd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9D15D14F85004589C3 /* os_netbsd.png */; };
+		1DED5DE615D14F86004589C3 /* os_netware.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9E15D14F85004589C3 /* os_netware.png */; };
+		1DED5DE715D14F86004589C3 /* os_openbsd_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D9F15D14F85004589C3 /* os_openbsd_64.png */; };
+		1DED5DE815D14F86004589C3 /* os_openbsd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA015D14F85004589C3 /* os_openbsd.png */; };
+		1DED5DE915D14F86004589C3 /* os_opensuse_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA115D14F85004589C3 /* os_opensuse_64.png */; };
+		1DED5DEA15D14F86004589C3 /* os_opensuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA215D14F85004589C3 /* os_opensuse.png */; };
+		1DED5DEB15D14F86004589C3 /* os_oracle_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA315D14F85004589C3 /* os_oracle_64.png */; };
+		1DED5DEC15D14F86004589C3 /* os_oracle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA415D14F85004589C3 /* os_oracle.png */; };
+		1DED5DED15D14F86004589C3 /* os_oraclesolaris_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA515D14F85004589C3 /* os_oraclesolaris_64.png */; };
+		1DED5DEE15D14F86004589C3 /* os_oraclesolaris.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA615D14F85004589C3 /* os_oraclesolaris.png */; };
+		1DED5DEF15D14F86004589C3 /* os_os2_other.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA715D14F85004589C3 /* os_os2_other.png */; };
+		1DED5DF015D14F86004589C3 /* os_os2ecs.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA815D14F85004589C3 /* os_os2ecs.png */; };
+		1DED5DF115D14F86004589C3 /* os_os2warp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DA915D14F85004589C3 /* os_os2warp3.png */; };
+		1DED5DF215D14F86004589C3 /* os_os2warp4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DAA15D14F85004589C3 /* os_os2warp4.png */; };
+		1DED5DF315D14F86004589C3 /* os_os2warp45.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DAB15D14F85004589C3 /* os_os2warp45.png */; };
+		1DED5DF415D14F86004589C3 /* os_other.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DAC15D14F85004589C3 /* os_other.png */; };
+		1DED5DF515D14F86004589C3 /* os_qnx.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DAD15D14F85004589C3 /* os_qnx.png */; };
+		1DED5DF615D14F86004589C3 /* os_redhat_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DAE15D14F85004589C3 /* os_redhat_64.png */; };
+		1DED5DF715D14F86004589C3 /* os_redhat.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DAF15D14F85004589C3 /* os_redhat.png */; };
+		1DED5DF815D14F86004589C3 /* os_solaris_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB015D14F85004589C3 /* os_solaris_64.png */; };
+		1DED5DF915D14F86004589C3 /* os_solaris.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB115D14F85004589C3 /* os_solaris.png */; };
+		1DED5DFA15D14F86004589C3 /* os_turbolinux_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB215D14F85004589C3 /* os_turbolinux_64.png */; };
+		1DED5DFB15D14F86004589C3 /* os_turbolinux.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB315D14F85004589C3 /* os_turbolinux.png */; };
+		1DED5DFC15D14F86004589C3 /* os_type_16px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB415D14F85004589C3 /* os_type_16px.png */; };
+		1DED5DFD15D14F86004589C3 /* os_ubuntu_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB515D14F85004589C3 /* os_ubuntu_64.png */; };
+		1DED5DFE15D14F86004589C3 /* os_ubuntu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB615D14F85004589C3 /* os_ubuntu.png */; };
+		1DED5DFF15D14F86004589C3 /* os_win_other.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB715D14F85004589C3 /* os_win_other.png */; };
+		1DED5E0015D14F86004589C3 /* os_win2k.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB815D14F85004589C3 /* os_win2k.png */; };
+		1DED5E0115D14F86004589C3 /* os_win2k3_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DB915D14F85004589C3 /* os_win2k3_64.png */; };
+		1DED5E0215D14F86004589C3 /* os_win2k3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DBA15D14F85004589C3 /* os_win2k3.png */; };
+		1DED5E0315D14F86004589C3 /* os_win2k8_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DBB15D14F85004589C3 /* os_win2k8_64.png */; };
+		1DED5E0415D14F86004589C3 /* os_win2k8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DBC15D14F85004589C3 /* os_win2k8.png */; };
+		1DED5E0515D14F86004589C3 /* os_win7_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DBD15D14F85004589C3 /* os_win7_64.png */; };
+		1DED5E0615D14F86004589C3 /* os_win7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DBE15D14F85004589C3 /* os_win7.png */; };
+		1DED5E0715D14F86004589C3 /* os_win8_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DBF15D14F85004589C3 /* os_win8_64.png */; };
+		1DED5E0815D14F86004589C3 /* os_win8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC015D14F85004589C3 /* os_win8.png */; };
+		1DED5E0915D14F86004589C3 /* os_win31.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC115D14F85004589C3 /* os_win31.png */; };
+		1DED5E0A15D14F86004589C3 /* os_win95.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC215D14F85004589C3 /* os_win95.png */; };
+		1DED5E0B15D14F86004589C3 /* os_win98.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC315D14F85004589C3 /* os_win98.png */; };
+		1DED5E0C15D14F86004589C3 /* os_winme.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC415D14F85004589C3 /* os_winme.png */; };
+		1DED5E0D15D14F86004589C3 /* os_winnt4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC515D14F85004589C3 /* os_winnt4.png */; };
+		1DED5E0E15D14F86004589C3 /* os_winvista_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC615D14F85004589C3 /* os_winvista_64.png */; };
+		1DED5E0F15D14F86004589C3 /* os_winvista.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC715D14F85004589C3 /* os_winvista.png */; };
+		1DED5E1015D14F86004589C3 /* os_winxp_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC815D14F85004589C3 /* os_winxp_64.png */; };
+		1DED5E1115D14F86004589C3 /* os_winxp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC915D14F85004589C3 /* os_winxp.png */; };
+		1DED5E1215D14F86004589C3 /* os_xandros_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DCA15D14F85004589C3 /* os_xandros_64.png */; };
+		1DED5E1315D14F86004589C3 /* os_xandros.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DCB15D14F85004589C3 /* os_xandros.png */; };
+		1DED5E1615D151CA004589C3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5E1515D151CA004589C3 /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D17291C15D0496000A7C081 /* VBoxMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBoxMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D17292015D0496000A7C081 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1D17292315D0496000A7C081 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1D17292415D0496000A7C081 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1D17292515D0496000A7C081 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D17292815D0496000A7C081 /* VBoxMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VBoxMenu-Info.plist"; sourceTree = "<group>"; };
+		1D17292A15D0496000A7C081 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D17292C15D0496000A7C081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D17292E15D0496000A7C081 /* VBoxMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBoxMenu-Prefix.pch"; sourceTree = "<group>"; };
+		1D17293015D0496000A7C081 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1D17293215D0496000A7C081 /* FVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FVAppDelegate.h; sourceTree = "<group>"; };
+		1D17293315D0496000A7C081 /* FVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FVAppDelegate.m; sourceTree = "<group>"; };
+		1D17293615D0496000A7C081 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1D17293E15D05DAF00A7C081 /* virtualbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = virtualbox.png; path = VBoxMenu/Images/virtualbox.png; sourceTree = "<group>"; };
+		1D17294215D1181400A7C081 /* listvms.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = listvms.sh; path = VBoxMenu/Scripts/listvms.sh; sourceTree = "<group>"; };
+		1D17294915D1212D00A7C081 /* startvm.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = startvm.sh; path = VBoxMenu/Scripts/startvm.sh; sourceTree = "<group>"; };
+		1D6F537115D124F400F8F6CE /* vminfo.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = vminfo.sh; path = VBoxMenu/Scripts/vminfo.sh; sourceTree = "<group>"; };
+		1DED5D8415D14F85004589C3 /* os_archlinux_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_archlinux_64.png; path = VBoxMenu/Images/os_archlinux_64.png; sourceTree = "<group>"; };
+		1DED5D8515D14F85004589C3 /* os_archlinux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_archlinux.png; path = VBoxMenu/Images/os_archlinux.png; sourceTree = "<group>"; };
+		1DED5D8615D14F85004589C3 /* os_debian_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_debian_64.png; path = VBoxMenu/Images/os_debian_64.png; sourceTree = "<group>"; };
+		1DED5D8715D14F85004589C3 /* os_debian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_debian.png; path = VBoxMenu/Images/os_debian.png; sourceTree = "<group>"; };
+		1DED5D8815D14F85004589C3 /* os_dos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_dos.png; path = VBoxMenu/Images/os_dos.png; sourceTree = "<group>"; };
+		1DED5D8915D14F85004589C3 /* os_fedora_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_fedora_64.png; path = VBoxMenu/Images/os_fedora_64.png; sourceTree = "<group>"; };
+		1DED5D8A15D14F85004589C3 /* os_fedora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_fedora.png; path = VBoxMenu/Images/os_fedora.png; sourceTree = "<group>"; };
+		1DED5D8B15D14F85004589C3 /* os_freebsd_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_freebsd_64.png; path = VBoxMenu/Images/os_freebsd_64.png; sourceTree = "<group>"; };
+		1DED5D8C15D14F85004589C3 /* os_freebsd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_freebsd.png; path = VBoxMenu/Images/os_freebsd.png; sourceTree = "<group>"; };
+		1DED5D8D15D14F85004589C3 /* os_gentoo_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_gentoo_64.png; path = VBoxMenu/Images/os_gentoo_64.png; sourceTree = "<group>"; };
+		1DED5D8E15D14F85004589C3 /* os_gentoo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_gentoo.png; path = VBoxMenu/Images/os_gentoo.png; sourceTree = "<group>"; };
+		1DED5D8F15D14F85004589C3 /* os_jrockitve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_jrockitve.png; path = VBoxMenu/Images/os_jrockitve.png; sourceTree = "<group>"; };
+		1DED5D9015D14F85004589C3 /* os_l4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_l4.png; path = VBoxMenu/Images/os_l4.png; sourceTree = "<group>"; };
+		1DED5D9115D14F85004589C3 /* os_linux_other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_linux_other.png; path = VBoxMenu/Images/os_linux_other.png; sourceTree = "<group>"; };
+		1DED5D9215D14F85004589C3 /* os_linux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_linux.png; path = VBoxMenu/Images/os_linux.png; sourceTree = "<group>"; };
+		1DED5D9315D14F85004589C3 /* os_linux22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_linux22.png; path = VBoxMenu/Images/os_linux22.png; sourceTree = "<group>"; };
+		1DED5D9415D14F85004589C3 /* os_linux24_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_linux24_64.png; path = VBoxMenu/Images/os_linux24_64.png; sourceTree = "<group>"; };
+		1DED5D9515D14F85004589C3 /* os_linux24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_linux24.png; path = VBoxMenu/Images/os_linux24.png; sourceTree = "<group>"; };
+		1DED5D9615D14F85004589C3 /* os_linux26_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_linux26_64.png; path = VBoxMenu/Images/os_linux26_64.png; sourceTree = "<group>"; };
+		1DED5D9715D14F85004589C3 /* os_linux26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_linux26.png; path = VBoxMenu/Images/os_linux26.png; sourceTree = "<group>"; };
+		1DED5D9815D14F85004589C3 /* os_macosx_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_macosx_64.png; path = VBoxMenu/Images/os_macosx_64.png; sourceTree = "<group>"; };
+		1DED5D9915D14F85004589C3 /* os_macosx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_macosx.png; path = VBoxMenu/Images/os_macosx.png; sourceTree = "<group>"; };
+		1DED5D9A15D14F85004589C3 /* os_mandriva_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_mandriva_64.png; path = VBoxMenu/Images/os_mandriva_64.png; sourceTree = "<group>"; };
+		1DED5D9B15D14F85004589C3 /* os_mandriva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_mandriva.png; path = VBoxMenu/Images/os_mandriva.png; sourceTree = "<group>"; };
+		1DED5D9C15D14F85004589C3 /* os_netbsd_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_netbsd_64.png; path = VBoxMenu/Images/os_netbsd_64.png; sourceTree = "<group>"; };
+		1DED5D9D15D14F85004589C3 /* os_netbsd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_netbsd.png; path = VBoxMenu/Images/os_netbsd.png; sourceTree = "<group>"; };
+		1DED5D9E15D14F85004589C3 /* os_netware.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_netware.png; path = VBoxMenu/Images/os_netware.png; sourceTree = "<group>"; };
+		1DED5D9F15D14F85004589C3 /* os_openbsd_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_openbsd_64.png; path = VBoxMenu/Images/os_openbsd_64.png; sourceTree = "<group>"; };
+		1DED5DA015D14F85004589C3 /* os_openbsd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_openbsd.png; path = VBoxMenu/Images/os_openbsd.png; sourceTree = "<group>"; };
+		1DED5DA115D14F85004589C3 /* os_opensuse_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_opensuse_64.png; path = VBoxMenu/Images/os_opensuse_64.png; sourceTree = "<group>"; };
+		1DED5DA215D14F85004589C3 /* os_opensuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_opensuse.png; path = VBoxMenu/Images/os_opensuse.png; sourceTree = "<group>"; };
+		1DED5DA315D14F85004589C3 /* os_oracle_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_oracle_64.png; path = VBoxMenu/Images/os_oracle_64.png; sourceTree = "<group>"; };
+		1DED5DA415D14F85004589C3 /* os_oracle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_oracle.png; path = VBoxMenu/Images/os_oracle.png; sourceTree = "<group>"; };
+		1DED5DA515D14F85004589C3 /* os_oraclesolaris_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_oraclesolaris_64.png; path = VBoxMenu/Images/os_oraclesolaris_64.png; sourceTree = "<group>"; };
+		1DED5DA615D14F85004589C3 /* os_oraclesolaris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_oraclesolaris.png; path = VBoxMenu/Images/os_oraclesolaris.png; sourceTree = "<group>"; };
+		1DED5DA715D14F85004589C3 /* os_os2_other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_os2_other.png; path = VBoxMenu/Images/os_os2_other.png; sourceTree = "<group>"; };
+		1DED5DA815D14F85004589C3 /* os_os2ecs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_os2ecs.png; path = VBoxMenu/Images/os_os2ecs.png; sourceTree = "<group>"; };
+		1DED5DA915D14F85004589C3 /* os_os2warp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_os2warp3.png; path = VBoxMenu/Images/os_os2warp3.png; sourceTree = "<group>"; };
+		1DED5DAA15D14F85004589C3 /* os_os2warp4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_os2warp4.png; path = VBoxMenu/Images/os_os2warp4.png; sourceTree = "<group>"; };
+		1DED5DAB15D14F85004589C3 /* os_os2warp45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_os2warp45.png; path = VBoxMenu/Images/os_os2warp45.png; sourceTree = "<group>"; };
+		1DED5DAC15D14F85004589C3 /* os_other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_other.png; path = VBoxMenu/Images/os_other.png; sourceTree = "<group>"; };
+		1DED5DAD15D14F85004589C3 /* os_qnx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_qnx.png; path = VBoxMenu/Images/os_qnx.png; sourceTree = "<group>"; };
+		1DED5DAE15D14F85004589C3 /* os_redhat_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_redhat_64.png; path = VBoxMenu/Images/os_redhat_64.png; sourceTree = "<group>"; };
+		1DED5DAF15D14F85004589C3 /* os_redhat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_redhat.png; path = VBoxMenu/Images/os_redhat.png; sourceTree = "<group>"; };
+		1DED5DB015D14F85004589C3 /* os_solaris_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_solaris_64.png; path = VBoxMenu/Images/os_solaris_64.png; sourceTree = "<group>"; };
+		1DED5DB115D14F85004589C3 /* os_solaris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_solaris.png; path = VBoxMenu/Images/os_solaris.png; sourceTree = "<group>"; };
+		1DED5DB215D14F85004589C3 /* os_turbolinux_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_turbolinux_64.png; path = VBoxMenu/Images/os_turbolinux_64.png; sourceTree = "<group>"; };
+		1DED5DB315D14F85004589C3 /* os_turbolinux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_turbolinux.png; path = VBoxMenu/Images/os_turbolinux.png; sourceTree = "<group>"; };
+		1DED5DB415D14F85004589C3 /* os_type_16px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_type_16px.png; path = VBoxMenu/Images/os_type_16px.png; sourceTree = "<group>"; };
+		1DED5DB515D14F85004589C3 /* os_ubuntu_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_ubuntu_64.png; path = VBoxMenu/Images/os_ubuntu_64.png; sourceTree = "<group>"; };
+		1DED5DB615D14F85004589C3 /* os_ubuntu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_ubuntu.png; path = VBoxMenu/Images/os_ubuntu.png; sourceTree = "<group>"; };
+		1DED5DB715D14F85004589C3 /* os_win_other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win_other.png; path = VBoxMenu/Images/os_win_other.png; sourceTree = "<group>"; };
+		1DED5DB815D14F85004589C3 /* os_win2k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win2k.png; path = VBoxMenu/Images/os_win2k.png; sourceTree = "<group>"; };
+		1DED5DB915D14F85004589C3 /* os_win2k3_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win2k3_64.png; path = VBoxMenu/Images/os_win2k3_64.png; sourceTree = "<group>"; };
+		1DED5DBA15D14F85004589C3 /* os_win2k3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win2k3.png; path = VBoxMenu/Images/os_win2k3.png; sourceTree = "<group>"; };
+		1DED5DBB15D14F85004589C3 /* os_win2k8_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win2k8_64.png; path = VBoxMenu/Images/os_win2k8_64.png; sourceTree = "<group>"; };
+		1DED5DBC15D14F85004589C3 /* os_win2k8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win2k8.png; path = VBoxMenu/Images/os_win2k8.png; sourceTree = "<group>"; };
+		1DED5DBD15D14F85004589C3 /* os_win7_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win7_64.png; path = VBoxMenu/Images/os_win7_64.png; sourceTree = "<group>"; };
+		1DED5DBE15D14F85004589C3 /* os_win7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win7.png; path = VBoxMenu/Images/os_win7.png; sourceTree = "<group>"; };
+		1DED5DBF15D14F85004589C3 /* os_win8_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win8_64.png; path = VBoxMenu/Images/os_win8_64.png; sourceTree = "<group>"; };
+		1DED5DC015D14F85004589C3 /* os_win8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win8.png; path = VBoxMenu/Images/os_win8.png; sourceTree = "<group>"; };
+		1DED5DC115D14F85004589C3 /* os_win31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win31.png; path = VBoxMenu/Images/os_win31.png; sourceTree = "<group>"; };
+		1DED5DC215D14F85004589C3 /* os_win95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win95.png; path = VBoxMenu/Images/os_win95.png; sourceTree = "<group>"; };
+		1DED5DC315D14F85004589C3 /* os_win98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_win98.png; path = VBoxMenu/Images/os_win98.png; sourceTree = "<group>"; };
+		1DED5DC415D14F85004589C3 /* os_winme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_winme.png; path = VBoxMenu/Images/os_winme.png; sourceTree = "<group>"; };
+		1DED5DC515D14F85004589C3 /* os_winnt4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_winnt4.png; path = VBoxMenu/Images/os_winnt4.png; sourceTree = "<group>"; };
+		1DED5DC615D14F85004589C3 /* os_winvista_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_winvista_64.png; path = VBoxMenu/Images/os_winvista_64.png; sourceTree = "<group>"; };
+		1DED5DC715D14F85004589C3 /* os_winvista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_winvista.png; path = VBoxMenu/Images/os_winvista.png; sourceTree = "<group>"; };
+		1DED5DC815D14F85004589C3 /* os_winxp_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_winxp_64.png; path = VBoxMenu/Images/os_winxp_64.png; sourceTree = "<group>"; };
+		1DED5DC915D14F85004589C3 /* os_winxp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_winxp.png; path = VBoxMenu/Images/os_winxp.png; sourceTree = "<group>"; };
+		1DED5DCA15D14F85004589C3 /* os_xandros_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_xandros_64.png; path = VBoxMenu/Images/os_xandros_64.png; sourceTree = "<group>"; };
+		1DED5DCB15D14F85004589C3 /* os_xandros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_xandros.png; path = VBoxMenu/Images/os_xandros.png; sourceTree = "<group>"; };
+		1DED5E1515D151CA004589C3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D17291915D0496000A7C081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D17294015D05E7700A7C081 /* AppKit.framework in Frameworks */,
+				1D17292115D0496000A7C081 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D17291115D0495F00A7C081 = {
+			isa = PBXGroup;
+			children = (
+				1D17294115D117E700A7C081 /* Scripts */,
+				1D17293D15D057E500A7C081 /* Images */,
+				1D17292615D0496000A7C081 /* VBoxMenu */,
+				1D17291F15D0496000A7C081 /* Frameworks */,
+				1D17291D15D0496000A7C081 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D17291D15D0496000A7C081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D17291C15D0496000A7C081 /* VBoxMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D17291F15D0496000A7C081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D17292015D0496000A7C081 /* Cocoa.framework */,
+				1D17292215D0496000A7C081 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D17292215D0496000A7C081 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D17292315D0496000A7C081 /* AppKit.framework */,
+				1D17292415D0496000A7C081 /* CoreData.framework */,
+				1D17292515D0496000A7C081 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1D17292615D0496000A7C081 /* VBoxMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1D17293215D0496000A7C081 /* FVAppDelegate.h */,
+				1D17293315D0496000A7C081 /* FVAppDelegate.m */,
+				1D17293515D0496000A7C081 /* MainMenu.xib */,
+				1D17292715D0496000A7C081 /* Supporting Files */,
+			);
+			path = VBoxMenu;
+			sourceTree = "<group>";
+		};
+		1D17292715D0496000A7C081 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DED5E1515D151CA004589C3 /* Icon.png */,
+				1D17292815D0496000A7C081 /* VBoxMenu-Info.plist */,
+				1D17292915D0496000A7C081 /* InfoPlist.strings */,
+				1D17292C15D0496000A7C081 /* main.m */,
+				1D17292E15D0496000A7C081 /* VBoxMenu-Prefix.pch */,
+				1D17292F15D0496000A7C081 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D17293D15D057E500A7C081 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1DED5D8415D14F85004589C3 /* os_archlinux_64.png */,
+				1DED5D8515D14F85004589C3 /* os_archlinux.png */,
+				1DED5D8615D14F85004589C3 /* os_debian_64.png */,
+				1DED5D8715D14F85004589C3 /* os_debian.png */,
+				1DED5D8815D14F85004589C3 /* os_dos.png */,
+				1DED5D8915D14F85004589C3 /* os_fedora_64.png */,
+				1DED5D8A15D14F85004589C3 /* os_fedora.png */,
+				1DED5D8B15D14F85004589C3 /* os_freebsd_64.png */,
+				1DED5D8C15D14F85004589C3 /* os_freebsd.png */,
+				1DED5D8D15D14F85004589C3 /* os_gentoo_64.png */,
+				1DED5D8E15D14F85004589C3 /* os_gentoo.png */,
+				1DED5D8F15D14F85004589C3 /* os_jrockitve.png */,
+				1DED5D9015D14F85004589C3 /* os_l4.png */,
+				1DED5D9115D14F85004589C3 /* os_linux_other.png */,
+				1DED5D9215D14F85004589C3 /* os_linux.png */,
+				1DED5D9315D14F85004589C3 /* os_linux22.png */,
+				1DED5D9415D14F85004589C3 /* os_linux24_64.png */,
+				1DED5D9515D14F85004589C3 /* os_linux24.png */,
+				1DED5D9615D14F85004589C3 /* os_linux26_64.png */,
+				1DED5D9715D14F85004589C3 /* os_linux26.png */,
+				1DED5D9815D14F85004589C3 /* os_macosx_64.png */,
+				1DED5D9915D14F85004589C3 /* os_macosx.png */,
+				1DED5D9A15D14F85004589C3 /* os_mandriva_64.png */,
+				1DED5D9B15D14F85004589C3 /* os_mandriva.png */,
+				1DED5D9C15D14F85004589C3 /* os_netbsd_64.png */,
+				1DED5D9D15D14F85004589C3 /* os_netbsd.png */,
+				1DED5D9E15D14F85004589C3 /* os_netware.png */,
+				1DED5D9F15D14F85004589C3 /* os_openbsd_64.png */,
+				1DED5DA015D14F85004589C3 /* os_openbsd.png */,
+				1DED5DA115D14F85004589C3 /* os_opensuse_64.png */,
+				1DED5DA215D14F85004589C3 /* os_opensuse.png */,
+				1DED5DA315D14F85004589C3 /* os_oracle_64.png */,
+				1DED5DA415D14F85004589C3 /* os_oracle.png */,
+				1DED5DA515D14F85004589C3 /* os_oraclesolaris_64.png */,
+				1DED5DA615D14F85004589C3 /* os_oraclesolaris.png */,
+				1DED5DA715D14F85004589C3 /* os_os2_other.png */,
+				1DED5DA815D14F85004589C3 /* os_os2ecs.png */,
+				1DED5DA915D14F85004589C3 /* os_os2warp3.png */,
+				1DED5DAA15D14F85004589C3 /* os_os2warp4.png */,
+				1DED5DAB15D14F85004589C3 /* os_os2warp45.png */,
+				1DED5DAC15D14F85004589C3 /* os_other.png */,
+				1DED5DAD15D14F85004589C3 /* os_qnx.png */,
+				1DED5DAE15D14F85004589C3 /* os_redhat_64.png */,
+				1DED5DAF15D14F85004589C3 /* os_redhat.png */,
+				1DED5DB015D14F85004589C3 /* os_solaris_64.png */,
+				1DED5DB115D14F85004589C3 /* os_solaris.png */,
+				1DED5DB215D14F85004589C3 /* os_turbolinux_64.png */,
+				1DED5DB315D14F85004589C3 /* os_turbolinux.png */,
+				1DED5DB415D14F85004589C3 /* os_type_16px.png */,
+				1DED5DB515D14F85004589C3 /* os_ubuntu_64.png */,
+				1DED5DB615D14F85004589C3 /* os_ubuntu.png */,
+				1DED5DB715D14F85004589C3 /* os_win_other.png */,
+				1DED5DB815D14F85004589C3 /* os_win2k.png */,
+				1DED5DB915D14F85004589C3 /* os_win2k3_64.png */,
+				1DED5DBA15D14F85004589C3 /* os_win2k3.png */,
+				1DED5DBB15D14F85004589C3 /* os_win2k8_64.png */,
+				1DED5DBC15D14F85004589C3 /* os_win2k8.png */,
+				1DED5DBD15D14F85004589C3 /* os_win7_64.png */,
+				1DED5DBE15D14F85004589C3 /* os_win7.png */,
+				1DED5DBF15D14F85004589C3 /* os_win8_64.png */,
+				1DED5DC015D14F85004589C3 /* os_win8.png */,
+				1DED5DC115D14F85004589C3 /* os_win31.png */,
+				1DED5DC215D14F85004589C3 /* os_win95.png */,
+				1DED5DC315D14F85004589C3 /* os_win98.png */,
+				1DED5DC415D14F85004589C3 /* os_winme.png */,
+				1DED5DC515D14F85004589C3 /* os_winnt4.png */,
+				1DED5DC615D14F85004589C3 /* os_winvista_64.png */,
+				1DED5DC715D14F85004589C3 /* os_winvista.png */,
+				1DED5DC815D14F85004589C3 /* os_winxp_64.png */,
+				1DED5DC915D14F85004589C3 /* os_winxp.png */,
+				1DED5DCA15D14F85004589C3 /* os_xandros_64.png */,
+				1DED5DCB15D14F85004589C3 /* os_xandros.png */,
+				1D17293E15D05DAF00A7C081 /* virtualbox.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		1D17294115D117E700A7C081 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1D17294215D1181400A7C081 /* listvms.sh */,
+				1D17294915D1212D00A7C081 /* startvm.sh */,
+				1D6F537115D124F400F8F6CE /* vminfo.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D17291B15D0496000A7C081 /* VBoxMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D17293A15D0496000A7C081 /* Build configuration list for PBXNativeTarget "VBoxMenu" */;
+			buildPhases = (
+				1D17291815D0496000A7C081 /* Sources */,
+				1D17291915D0496000A7C081 /* Frameworks */,
+				1D17291A15D0496000A7C081 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VBoxMenu;
+			productName = VBoxMenu;
+			productReference = 1D17291C15D0496000A7C081 /* VBoxMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D17291315D0496000A7C081 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FV;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1D17291615D0496000A7C081 /* Build configuration list for PBXProject "VBoxMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1D17291115D0495F00A7C081;
+			productRefGroup = 1D17291D15D0496000A7C081 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D17291B15D0496000A7C081 /* VBoxMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D17291A15D0496000A7C081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6F537315D1272B00F8F6CE /* vminfo.sh in Resources */,
+				1D17294A15D1224200A7C081 /* startvm.sh in Resources */,
+				1D17294715D118C500A7C081 /* listvms.sh in Resources */,
+				1D17292B15D0496000A7C081 /* InfoPlist.strings in Resources */,
+				1D17293115D0496000A7C081 /* Credits.rtf in Resources */,
+				1D17293715D0496000A7C081 /* MainMenu.xib in Resources */,
+				1D17293F15D05DAF00A7C081 /* virtualbox.png in Resources */,
+				1DED5DCC15D14F86004589C3 /* os_archlinux_64.png in Resources */,
+				1DED5DCD15D14F86004589C3 /* os_archlinux.png in Resources */,
+				1DED5DCE15D14F86004589C3 /* os_debian_64.png in Resources */,
+				1DED5DCF15D14F86004589C3 /* os_debian.png in Resources */,
+				1DED5DD015D14F86004589C3 /* os_dos.png in Resources */,
+				1DED5DD115D14F86004589C3 /* os_fedora_64.png in Resources */,
+				1DED5DD215D14F86004589C3 /* os_fedora.png in Resources */,
+				1DED5DD315D14F86004589C3 /* os_freebsd_64.png in Resources */,
+				1DED5DD415D14F86004589C3 /* os_freebsd.png in Resources */,
+				1DED5DD515D14F86004589C3 /* os_gentoo_64.png in Resources */,
+				1DED5DD615D14F86004589C3 /* os_gentoo.png in Resources */,
+				1DED5DD715D14F86004589C3 /* os_jrockitve.png in Resources */,
+				1DED5DD815D14F86004589C3 /* os_l4.png in Resources */,
+				1DED5DD915D14F86004589C3 /* os_linux_other.png in Resources */,
+				1DED5DDA15D14F86004589C3 /* os_linux.png in Resources */,
+				1DED5DDB15D14F86004589C3 /* os_linux22.png in Resources */,
+				1DED5DDC15D14F86004589C3 /* os_linux24_64.png in Resources */,
+				1DED5DDD15D14F86004589C3 /* os_linux24.png in Resources */,
+				1DED5DDE15D14F86004589C3 /* os_linux26_64.png in Resources */,
+				1DED5DDF15D14F86004589C3 /* os_linux26.png in Resources */,
+				1DED5DE015D14F86004589C3 /* os_macosx_64.png in Resources */,
+				1DED5DE115D14F86004589C3 /* os_macosx.png in Resources */,
+				1DED5DE215D14F86004589C3 /* os_mandriva_64.png in Resources */,
+				1DED5DE315D14F86004589C3 /* os_mandriva.png in Resources */,
+				1DED5DE415D14F86004589C3 /* os_netbsd_64.png in Resources */,
+				1DED5DE515D14F86004589C3 /* os_netbsd.png in Resources */,
+				1DED5DE615D14F86004589C3 /* os_netware.png in Resources */,
+				1DED5DE715D14F86004589C3 /* os_openbsd_64.png in Resources */,
+				1DED5DE815D14F86004589C3 /* os_openbsd.png in Resources */,
+				1DED5DE915D14F86004589C3 /* os_opensuse_64.png in Resources */,
+				1DED5DEA15D14F86004589C3 /* os_opensuse.png in Resources */,
+				1DED5DEB15D14F86004589C3 /* os_oracle_64.png in Resources */,
+				1DED5DEC15D14F86004589C3 /* os_oracle.png in Resources */,
+				1DED5DED15D14F86004589C3 /* os_oraclesolaris_64.png in Resources */,
+				1DED5DEE15D14F86004589C3 /* os_oraclesolaris.png in Resources */,
+				1DED5DEF15D14F86004589C3 /* os_os2_other.png in Resources */,
+				1DED5DF015D14F86004589C3 /* os_os2ecs.png in Resources */,
+				1DED5DF115D14F86004589C3 /* os_os2warp3.png in Resources */,
+				1DED5DF215D14F86004589C3 /* os_os2warp4.png in Resources */,
+				1DED5DF315D14F86004589C3 /* os_os2warp45.png in Resources */,
+				1DED5DF415D14F86004589C3 /* os_other.png in Resources */,
+				1DED5DF515D14F86004589C3 /* os_qnx.png in Resources */,
+				1DED5DF615D14F86004589C3 /* os_redhat_64.png in Resources */,
+				1DED5DF715D14F86004589C3 /* os_redhat.png in Resources */,
+				1DED5DF815D14F86004589C3 /* os_solaris_64.png in Resources */,
+				1DED5DF915D14F86004589C3 /* os_solaris.png in Resources */,
+				1DED5DFA15D14F86004589C3 /* os_turbolinux_64.png in Resources */,
+				1DED5DFB15D14F86004589C3 /* os_turbolinux.png in Resources */,
+				1DED5DFC15D14F86004589C3 /* os_type_16px.png in Resources */,
+				1DED5DFD15D14F86004589C3 /* os_ubuntu_64.png in Resources */,
+				1DED5DFE15D14F86004589C3 /* os_ubuntu.png in Resources */,
+				1DED5DFF15D14F86004589C3 /* os_win_other.png in Resources */,
+				1DED5E0015D14F86004589C3 /* os_win2k.png in Resources */,
+				1DED5E0115D14F86004589C3 /* os_win2k3_64.png in Resources */,
+				1DED5E0215D14F86004589C3 /* os_win2k3.png in Resources */,
+				1DED5E0315D14F86004589C3 /* os_win2k8_64.png in Resources */,
+				1DED5E0415D14F86004589C3 /* os_win2k8.png in Resources */,
+				1DED5E0515D14F86004589C3 /* os_win7_64.png in Resources */,
+				1DED5E0615D14F86004589C3 /* os_win7.png in Resources */,
+				1DED5E0715D14F86004589C3 /* os_win8_64.png in Resources */,
+				1DED5E0815D14F86004589C3 /* os_win8.png in Resources */,
+				1DED5E0915D14F86004589C3 /* os_win31.png in Resources */,
+				1DED5E0A15D14F86004589C3 /* os_win95.png in Resources */,
+				1DED5E0B15D14F86004589C3 /* os_win98.png in Resources */,
+				1DED5E0C15D14F86004589C3 /* os_winme.png in Resources */,
+				1DED5E0D15D14F86004589C3 /* os_winnt4.png in Resources */,
+				1DED5E0E15D14F86004589C3 /* os_winvista_64.png in Resources */,
+				1DED5E0F15D14F86004589C3 /* os_winvista.png in Resources */,
+				1DED5E1015D14F86004589C3 /* os_winxp_64.png in Resources */,
+				1DED5E1115D14F86004589C3 /* os_winxp.png in Resources */,
+				1DED5E1215D14F86004589C3 /* os_xandros_64.png in Resources */,
+				1DED5E1315D14F86004589C3 /* os_xandros.png in Resources */,
+				1DED5E1615D151CA004589C3 /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D17291815D0496000A7C081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D17292D15D0496000A7C081 /* main.m in Sources */,
+				1D17293415D0496000A7C081 /* FVAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D17292915D0496000A7C081 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D17292A15D0496000A7C081 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D17292F15D0496000A7C081 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D17293015D0496000A7C081 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1D17293515D0496000A7C081 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D17293615D0496000A7C081 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D17293815D0496000A7C081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1D17293915D0496000A7C081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1D17293B15D0496000A7C081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBoxMenu/VBoxMenu-Prefix.pch";
+				INFOPLIST_FILE = "VBoxMenu/VBoxMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1D17293C15D0496000A7C081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VBoxMenu/VBoxMenu-Prefix.pch";
+				INFOPLIST_FILE = "VBoxMenu/VBoxMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D17291615D0496000A7C081 /* Build configuration list for PBXProject "VBoxMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D17293815D0496000A7C081 /* Debug */,
+				1D17293915D0496000A7C081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D17293A15D0496000A7C081 /* Build configuration list for PBXNativeTarget "VBoxMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D17293B15D0496000A7C081 /* Debug */,
+				1D17293C15D0496000A7C081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D17291315D0496000A7C081 /* Project object */;
+}
