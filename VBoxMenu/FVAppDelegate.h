@@ -11,6 +11,7 @@
 @interface FVAppDelegate : NSObject <NSApplicationDelegate>
 {
     NSStatusItem *statusItem;
+    NSSize itemSize;
 }
 
 @property (assign) IBOutlet NSMenu *statusMenu;

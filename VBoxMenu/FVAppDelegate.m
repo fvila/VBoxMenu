@@ -24,7 +24,6 @@
 
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     
-    NSSize itemSize;
     itemSize.width = [[NSStatusBar systemStatusBar] thickness] - 1;
     itemSize.height = [[NSStatusBar systemStatusBar] thickness] - 1;
         
@@ -36,6 +35,11 @@
     [statusItem setMenu:_statusMenu];
     [statusItem setHighlightMode:YES];
     
+    [self reloadVMS];
+}
+
+-(void) reloadVMS
+{
     NSString *cmdName = [[NSBundle mainBundle] pathForResource:@"listvms" ofType:@"sh"];
     
     NSPipe *pipe = [NSPipe pipe];
@@ -51,8 +55,10 @@
     
     NSData *data = [[pipe fileHandleForReading] readDataToEndOfFile];
     NSString *outputCmd = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-   
+    
     NSArray *vms = [outputCmd componentsSeparatedByString:@"\n"];
+    
+    [_statusMenu removeAllItems];
     
     for (id object in vms)
     {
@@ -62,7 +68,7 @@
             break;
         
         NSMenuItem *menu = [[NSMenuItem alloc] initWithTitle:currentItem
-                                                      action:@selector(startVM:) 
+                                                      action:@selector(menuCallback:) 
                                                keyEquivalent:@""];
         
         NSPipe *pipeinfo = [NSPipe pipe];
@@ -88,35 +94,51 @@
         [osImage setSize:itemSize];
         
         [menu setImage:osImage];
-                
+        
         [_statusMenu addItem:menu];
     }
     
-    NSMenuItem *menu = [[NSMenuItem alloc] initWithTitle:@"Quit"
-                                                  action:@selector(startVM:) 
+    NSMenuItem *menu = [[NSMenuItem alloc] initWithTitle:@"Reload"
+                                                  action:@selector(menuCallback:) 
                                            keyEquivalent:@""];
-
+    
     NSMenuItem *separator = [NSMenuItem separatorItem];
     
     [_statusMenu addItem:separator];
     [_statusMenu addItem:menu];
+    
+    menu = [[NSMenuItem alloc] initWithTitle:@"Quit"
+                                      action:@selector(menuCallback:) 
+                               keyEquivalent:@""];
+    [_statusMenu addItem:menu];
 }
 
--(void) startVM: (id)sender
+-(void) startVM:(NSString*) vmname
 {
-    NSString *vmname = [(NSMenuItem*)sender title];
-    
-    if (vmname == @"Quit")
-    {
-        [NSApp terminate:self];
-    }
-    
     NSString *cmdName = [[NSBundle mainBundle] pathForResource:@"startvm" ofType:@"sh"];
-
+    
     NSString *cmd = [NSString stringWithString:@"/bin/sh"];
     NSArray *args = [NSArray arrayWithObjects:cmdName,vmname,nil];
     
     [NSTask launchedTaskWithLaunchPath:cmd arguments:args];
+}
+
+-(void) menuCallback: (id)sender
+{
+    NSString *menuName = [(NSMenuItem*)sender title];
+    
+    if (menuName == @"Quit")
+    {
+        [NSApp terminate:self];
+    }
+    else if (menuName == @"Reload")
+    {
+        [self reloadVMS];
+    }
+    else 
+    {
+        [self startVM:menuName];
+    }
 }
 
 @end

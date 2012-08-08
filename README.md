@@ -4,4 +4,5 @@ This projects creates a menulet only application which lists all the virtual mac
 
 Just one click and the virtual machine starts.
 
-The VM's list updates automatically with the VM's created in VirtualBox.
+The VM's list does not update automatically with the VM's created in VirtualBox. In order to update the list 
+there is the reload button on the menu
