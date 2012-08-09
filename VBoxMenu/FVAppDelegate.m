@@ -20,7 +20,9 @@
 - (void)awakeFromNib
 {
     NSString *imageName = [[NSBundle mainBundle] pathForResource:@"virtualbox" ofType:@"png"];
+    NSString *imageSelName = [[NSBundle mainBundle] pathForResource:@"virtualbox-sel" ofType:@"png"];
     NSImage *statusImage = [[NSImage alloc] initWithContentsOfFile:imageName];
+    NSImage *statusSelImage = [[NSImage alloc] initWithContentsOfFile:imageSelName];
 
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     
@@ -29,8 +31,11 @@
         
     [statusImage setScalesWhenResized:YES];
     [statusImage setSize:itemSize];
+    [statusSelImage setScalesWhenResized:YES];
+    [statusSelImage setSize:itemSize];
     
     [statusItem setImage:statusImage];
+    [statusItem setAlternateImage:statusSelImage];
     
     [statusItem setMenu:_statusMenu];
     [statusItem setHighlightMode:YES];

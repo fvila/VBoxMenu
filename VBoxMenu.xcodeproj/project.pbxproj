@@ -17,6 +17,8 @@
 		1D17294015D05E7700A7C081 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D17292315D0496000A7C081 /* AppKit.framework */; };
 		1D17294715D118C500A7C081 /* listvms.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1D17294215D1181400A7C081 /* listvms.sh */; };
 		1D17294A15D1224200A7C081 /* startvm.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1D17294915D1212D00A7C081 /* startvm.sh */; };
+		1D30380E15D40AEE008456C3 /* virtualbox-sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D30380D15D40AEE008456C3 /* virtualbox-sel.png */; };
+		1D30381115D40BDA008456C3 /* virtualbox.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1D30381015D40BDA008456C3 /* virtualbox.icns */; };
 		1D6F537315D1272B00F8F6CE /* vminfo.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1D6F537115D124F400F8F6CE /* vminfo.sh */; };
 		1DED5DCC15D14F86004589C3 /* os_archlinux_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8415D14F85004589C3 /* os_archlinux_64.png */; };
 		1DED5DCD15D14F86004589C3 /* os_archlinux.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5D8515D14F85004589C3 /* os_archlinux.png */; };
@@ -90,7 +92,6 @@
 		1DED5E1115D14F86004589C3 /* os_winxp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DC915D14F85004589C3 /* os_winxp.png */; };
 		1DED5E1215D14F86004589C3 /* os_xandros_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DCA15D14F85004589C3 /* os_xandros_64.png */; };
 		1DED5E1315D14F86004589C3 /* os_xandros.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5DCB15D14F85004589C3 /* os_xandros.png */; };
-		1DED5E1615D151CA004589C3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED5E1515D151CA004589C3 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		1D17293E15D05DAF00A7C081 /* virtualbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = virtualbox.png; path = VBoxMenu/Images/virtualbox.png; sourceTree = "<group>"; };
 		1D17294215D1181400A7C081 /* listvms.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = listvms.sh; path = VBoxMenu/Scripts/listvms.sh; sourceTree = "<group>"; };
 		1D17294915D1212D00A7C081 /* startvm.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = startvm.sh; path = VBoxMenu/Scripts/startvm.sh; sourceTree = "<group>"; };
+		1D30380D15D40AEE008456C3 /* virtualbox-sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "virtualbox-sel.png"; path = "VBoxMenu/Images/virtualbox-sel.png"; sourceTree = "<group>"; };
+		1D30381015D40BDA008456C3 /* virtualbox.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = virtualbox.icns; path = VBoxMenu/virtualbox.icns; sourceTree = "<group>"; };
 		1D6F537115D124F400F8F6CE /* vminfo.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = vminfo.sh; path = VBoxMenu/Scripts/vminfo.sh; sourceTree = "<group>"; };
 		1DED5D8415D14F85004589C3 /* os_archlinux_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_archlinux_64.png; path = VBoxMenu/Images/os_archlinux_64.png; sourceTree = "<group>"; };
 		1DED5D8515D14F85004589C3 /* os_archlinux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_archlinux.png; path = VBoxMenu/Images/os_archlinux.png; sourceTree = "<group>"; };
@@ -183,7 +186,6 @@
 		1DED5DC915D14F85004589C3 /* os_winxp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_winxp.png; path = VBoxMenu/Images/os_winxp.png; sourceTree = "<group>"; };
 		1DED5DCA15D14F85004589C3 /* os_xandros_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_xandros_64.png; path = VBoxMenu/Images/os_xandros_64.png; sourceTree = "<group>"; };
 		1DED5DCB15D14F85004589C3 /* os_xandros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = os_xandros.png; path = VBoxMenu/Images/os_xandros.png; sourceTree = "<group>"; };
-		1DED5E1515D151CA004589C3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		1D17291115D0495F00A7C081 = {
 			isa = PBXGroup;
 			children = (
+				1D30381015D40BDA008456C3 /* virtualbox.icns */,
 				1D17294115D117E700A7C081 /* Scripts */,
 				1D17293D15D057E500A7C081 /* Images */,
 				1D17292615D0496000A7C081 /* VBoxMenu */,
@@ -251,7 +254,6 @@
 		1D17292715D0496000A7C081 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1DED5E1515D151CA004589C3 /* Icon.png */,
 				1D17292815D0496000A7C081 /* VBoxMenu-Info.plist */,
 				1D17292915D0496000A7C081 /* InfoPlist.strings */,
 				1D17292C15D0496000A7C081 /* main.m */,
@@ -264,6 +266,7 @@
 		1D17293D15D057E500A7C081 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1D30380D15D40AEE008456C3 /* virtualbox-sel.png */,
 				1DED5D8415D14F85004589C3 /* os_archlinux_64.png */,
 				1DED5D8515D14F85004589C3 /* os_archlinux.png */,
 				1DED5D8615D14F85004589C3 /* os_debian_64.png */,
@@ -481,7 +484,8 @@
 				1DED5E1115D14F86004589C3 /* os_winxp.png in Resources */,
 				1DED5E1215D14F86004589C3 /* os_xandros_64.png in Resources */,
 				1DED5E1315D14F86004589C3 /* os_xandros.png in Resources */,
-				1DED5E1615D151CA004589C3 /* Icon.png in Resources */,
+				1D30380E15D40AEE008456C3 /* virtualbox-sel.png in Resources */,
+				1D30381115D40BDA008456C3 /* virtualbox.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

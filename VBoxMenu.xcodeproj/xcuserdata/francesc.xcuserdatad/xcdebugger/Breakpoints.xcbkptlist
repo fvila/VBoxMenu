@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "VBoxMenu/FVAppDelegate.m"
-         timestampString = "366118682.508344"
+         timestampString = "366217975.078103"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
