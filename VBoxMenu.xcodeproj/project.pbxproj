@@ -381,7 +381,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FV;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 1D17291615D0496000A7C081 /* Build configuration list for PBXProject "VBoxMenu" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -581,6 +581,7 @@
 		1D17293B15D0496000A7C081 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VBoxMenu/VBoxMenu-Prefix.pch";
 				INFOPLIST_FILE = "VBoxMenu/VBoxMenu-Info.plist";
@@ -592,6 +593,7 @@
 		1D17293C15D0496000A7C081 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VBoxMenu/VBoxMenu-Prefix.pch";
 				INFOPLIST_FILE = "VBoxMenu/VBoxMenu-Info.plist";
