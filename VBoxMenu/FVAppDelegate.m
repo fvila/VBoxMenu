@@ -49,7 +49,7 @@
     
     NSPipe *pipe = [NSPipe pipe];
     NSTask *task = [[NSTask alloc] init];
-    NSString *cmd = [NSString stringWithString:@"/bin/sh"];
+    NSString *cmd = @"/bin/sh";
     NSArray *args = [NSArray arrayWithObject:cmdName];
     
     [task setLaunchPath:cmd];
@@ -122,7 +122,7 @@
 {
     NSString *cmdName = [[NSBundle mainBundle] pathForResource:@"startvm" ofType:@"sh"];
     
-    NSString *cmd = [NSString stringWithString:@"/bin/sh"];
+    NSString *cmd = @"/bin/sh";
     NSArray *args = [NSArray arrayWithObjects:cmdName,vmname,nil];
     
     [NSTask launchedTaskWithLaunchPath:cmd arguments:args];
